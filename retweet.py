@@ -6,10 +6,10 @@ bearer_token = os.environ.get('TWITTER_BEARER_TOKEN')
 
 def create_url():
     user_fields = "user.fields=created_at,description"
-    id = ""
+    id = "1454878780334477316"
     url  = "https://api.twitter.com/2/tweets/{}/retweeted_by".format(id)
 
-    return url
+    return url, user_fields
 
 
 def bearer_oauth(r):

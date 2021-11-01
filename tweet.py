@@ -6,8 +6,8 @@ bearer_token = os.environ.get('TWITTER_BEARER_TOKEN')
 
 def create_url():
     tweet_fields = "tweet.fields=lang,author_id"
-    ids = "1278747501642657792,1255542774432063488"
-    url = f"https://api.twitter.com/2/tweets?{ids}&{tweet_fields}"
+    id = "1454878780334477316"
+    url = "https://api.twitter.com/2/tweets?{}&{}".format(id, tweet_fields)
 
     return url
 
