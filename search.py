@@ -2,7 +2,7 @@ import requests
 import os
 import json 
 
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAPhVVQEAAAAAjC6eYHqsvAsQlfCNacKyvDrfjI0%3DdBDTecTokHS4zsxGsrjLEBAoFYGnz5yM4G9oWuo71zGeaxp9KE"
+bearer_token = os.environ.get("TWITTER_BEARER_TOKEN")
 
 url = "https://api.twitter.com/2/tweets/search/recent"
 
