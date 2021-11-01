@@ -4,7 +4,7 @@ import json
 
 bearer_token = "AAAAAAAAAAAAAAAAAAAAAPhVVQEAAAAAjC6eYHqsvAsQlfCNacKyvDrfjI0%3DdBDTecTokHS4zsxGsrjLEBAoFYGnz5yM4G9oWuo71zGeaxp9KE"
 
-url = "https://api.twitter.com/2/tweets/search/all"
+url = "https://api.twitter.com/2/tweets/search/recent"
 
 query_params = {'query': '(from:twitterdev -is:retweet) OR #twitterdev','tweet.fields': 'author_id'}
 
